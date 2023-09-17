@@ -1,0 +1,35 @@
+.rodape-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-top: solid 1px rgba(255,255,255,.2);
+}
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.rodape-paragrafo {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feedback-joia {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+    margin: 40px 0 0 0;
+}
+
+.rodape-paragrafo{
+    margin: 45px 0 70px 0;
+}
