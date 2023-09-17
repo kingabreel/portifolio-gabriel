@@ -1,0 +1,28 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+}
+.skills-titulo {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.skills-bar {
+    display: flex;
+    gap: 400px;
+}
+
+.skills-left-column,
+.skills-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

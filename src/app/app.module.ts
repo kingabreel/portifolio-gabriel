@@ -10,6 +10,8 @@ import { MainComponent } from './components/main/main.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { TituloParagrafoComponent } from './components/titulo-paragrafo/titulo-paragrafo.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RodapeComponent } from './components/rodape/rodape.component';
     MainComponent,
     PerfilComponent,
     TituloParagrafoComponent,
-    RodapeComponent
+    RodapeComponent,
+    SkillsComponent,
+    SkillBarComponent
   ],
   imports: [
     BrowserModule,
