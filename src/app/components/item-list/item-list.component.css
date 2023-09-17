@@ -1,5 +1,27 @@
+.list-container {
+    display: flex;
+    width: 500px;
+    height: 45px;
+    padding: 9px 30px 8px 30px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 43px;
+    flex-shrink: 0;
+}
 .header-container-list {
     list-style: none;
     display: flex;
     gap: 60px;
+}
+
+.header-list-item {
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

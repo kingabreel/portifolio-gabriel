@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MainComponent } from './components/main/main.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { TituloParagrafoComponent } from './components/titulo-paragrafo/titulo-paragrafo.component';
+import { RodapeComponent } from './components/rodape/rodape.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ItemListComponent,
-    HomeComponent
+    HomeComponent,
+    MainComponent,
+    PerfilComponent,
+    TituloParagrafoComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
