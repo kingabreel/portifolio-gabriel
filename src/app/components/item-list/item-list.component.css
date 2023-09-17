@@ -14,7 +14,7 @@
     gap: 60px;
 }
 
-.header-list-item {
+.header-list-item, a {
     flex-shrink: 0;
 
     color: #FFF;
@@ -24,4 +24,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+    transition: .5s;
 }

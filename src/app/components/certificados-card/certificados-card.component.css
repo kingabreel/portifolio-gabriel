@@ -1,0 +1,11 @@
+.certificado-container {
+    display: flex;
+    gap: 50px;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.img-certificados{
+    width: 680px;
+    height: 400px;
+}

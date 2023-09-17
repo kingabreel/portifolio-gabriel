@@ -13,4 +13,9 @@ export class ItemListComponent {
   @Input()
   listItem3:string=""
 
+  public modifyListItem2() {
+    if (this.listItem2 === "Certificações") {
+      this.listItem2 = "certificados";
+    }
+  }
 }

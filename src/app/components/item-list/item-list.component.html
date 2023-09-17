@@ -1,7 +1,7 @@
 <div class="list-container">
     <ul class="header-container-list">
-        <li class="header-list-item">{{listItem1}}</li>
-        <li class="header-list-item">{{listItem2}}</li>
-        <li class="header-list-item">{{listItem3}}</li>
+        <li class="header-list-item"><a [attr.href]="'/' + listItem1.toLowerCase()">{{listItem1}}</a></li>
+        <li class="header-list-item"><a (click)="modifyListItem2()" [attr.href]="'/' + listItem2.toLowerCase()">{{listItem2}}</a></li>
+        <li class="header-list-item"><a [attr.href]="'/' + listItem3.toLowerCase()">{{listItem3}}</a></li>
     </ul>
 </div>
