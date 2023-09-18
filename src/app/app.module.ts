@@ -13,11 +13,9 @@ import { RodapeComponent } from './components/rodape/rodape.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 import { CertificatesComponent } from './pages/certificates/certificates.component';
-import { CardComponent } from './components/certificados/card/card.component';
 import { CertificadosCardComponent } from './components/certificados-card/certificados-card.component';
 import { ProjetosCardComponent } from './components/projetos-card/projetos-card.component';
 import { ContatoComponent } from './pages/contato/contato.component';
-import { SugestaoComponent } from './pages/sugestao/sugestao.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 
 @NgModule({
@@ -33,11 +31,9 @@ import { ProjetosComponent } from './pages/projetos/projetos.component';
     SkillsComponent,
     SkillBarComponent,
     CertificatesComponent,
-    CardComponent,
     CertificadosCardComponent,
     ProjetosCardComponent,
     ContatoComponent,
-    SugestaoComponent,
     ProjetosComponent
   ],
   imports: [
