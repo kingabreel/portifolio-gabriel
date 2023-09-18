@@ -15,6 +15,10 @@ import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 import { CertificatesComponent } from './pages/certificates/certificates.component';
 import { CardComponent } from './components/certificados/card/card.component';
 import { CertificadosCardComponent } from './components/certificados-card/certificados-card.component';
+import { ProjetosCardComponent } from './components/projetos-card/projetos-card.component';
+import { ContatoComponent } from './pages/contato/contato.component';
+import { SugestaoComponent } from './pages/sugestao/sugestao.component';
+import { ProjetosComponent } from './pages/projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { CertificadosCardComponent } from './components/certificados-card/certif
     SkillBarComponent,
     CertificatesComponent,
     CardComponent,
-    CertificadosCardComponent
+    CertificadosCardComponent,
+    ProjetosCardComponent,
+    ContatoComponent,
+    SugestaoComponent,
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,

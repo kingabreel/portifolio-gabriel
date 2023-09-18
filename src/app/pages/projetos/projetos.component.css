@@ -1,0 +1,10 @@
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 5px auto;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border: 1px solid rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.06);
+}
