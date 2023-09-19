@@ -12,6 +12,7 @@
     list-style: none;
     display: flex;
     gap: 60px;
+    animation: aparecerSuave 3s forwards;
 }
 
 .header-list-item, a {
@@ -34,4 +35,15 @@ a {
 a:hover {
     color: #ccc;
     transition: .5s;
+}
+
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(10px);
+    }
 }

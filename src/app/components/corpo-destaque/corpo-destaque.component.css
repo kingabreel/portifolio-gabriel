@@ -1,0 +1,74 @@
+.body-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    justify-content: center;
+    color: #fff;
+    gap: 50px;
+    padding: 50px; 
+    width: 70%;   
+    height: 748px;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255,255,255,.2);
+    animation: flutuar 3s infinite ease-in-out;
+}
+
+.body-main div.text-main {
+    margin-top: 120px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 800px;
+    animation: iniciar 1s forwards;
+}
+
+.border {
+    border-top: 1px solid #ccc;
+    width: 300px;
+}
+.body-main img {
+    background-color: #ccc;
+    border-radius: 200px 200px 20px 20px;
+}
+
+div.text-main{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.text-main h1 {
+    font-weight: 400;
+    font-size: 32px;
+}
+div.text-main h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+div.text-main p {
+    font-weight: 100;
+    font-size: 26px;
+    color: #ccc;
+}
+
+@keyframes iniciar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(10px);
+    }
+    
+}

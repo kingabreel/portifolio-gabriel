@@ -17,6 +17,7 @@ import { CertificadosCardComponent } from './components/certificados-card/certif
 import { ProjetosCardComponent } from './components/projetos-card/projetos-card.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
+import { CorpoDestaqueComponent } from './components/corpo-destaque/corpo-destaque.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProjetosComponent } from './pages/projetos/projetos.component';
     CertificadosCardComponent,
     ProjetosCardComponent,
     ContatoComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    CorpoDestaqueComponent
   ],
   imports: [
     BrowserModule,

@@ -6,9 +6,6 @@
 }
 
 body {
-    /*background: linear-gradient(to bottom, #00000F, #000014, #00001A, #01011F, #000023, #000026, #00002B, #000033, #00001A, #000033, #000023, #000033, #00001A, #000033, #00002B, #000026, #000023, #01011F, #00001A, #000014, #00000F);
-   
-   */
    background: linear-gradient(to bottom, #000000, #060606, #0c0c0c, #121212, #101010, #080808, #000000, #080808, #101010);
     background-size: 200% 200%;
     animation: backgroundColor 50s linear infinite;
