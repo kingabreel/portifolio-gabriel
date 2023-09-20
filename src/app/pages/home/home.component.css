@@ -17,6 +17,16 @@ app-rodape{
 app-corpo-destaque{
     width: 80%;
 }
+#perfil {
+    display: flex;
+    gap: 70px;
+}
+#line {
+    height: 495px;
+    width: 1px;
+    background-color: rgba(255,255,255,.5);
+    margin-top: 70px;
+}
 .dots {
     text-align: center;
   }
@@ -73,7 +83,6 @@ app-corpo-destaque{
     from {
         opacity: 0;
         transform: translateX(-100%);
-
     }
     to {
         opacity: 1;

@@ -1,18 +1,16 @@
 .perfil-container {
-    width: 1240px;
     height: 450px;
     flex-shrink: 0;
 
     display: flex;
-    gap: 150px;
-    margin: 70px auto 0 auto;
+    gap: 80px;
+    margin-top: 70px;
 }
 
 .img {
-    width: 400px;
+    width: 350px;
     height: 400px;
     border-radius: 30px;
-    margin-left: 25%;
     border-radius: 300px 0 300px 0;
 
 }
@@ -21,7 +19,7 @@
     transition: ease-in-out 3s;
 }
 .texto-techonogias {
-    width: 590px;
+    width: 520px;
     height: 500px;
 }
 .perfil-tech {
@@ -34,8 +32,8 @@
 .svg-java, 
 .svg-mysql,
 .svg-git {
-    width: 105px;
-    height: 105px;
+    width: 85px;
+    height: 85px;
 }
 
 .svg-angular:hover,

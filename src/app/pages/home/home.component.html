@@ -10,8 +10,9 @@
     <div class="content">
         <span></span>
         <app-corpo-destaque [ngClass]="{'first': currentSection === 0 && lastSection === -1, 'ativoEsq': currentSection === 0, 'desativoEsq': currentSection !== 0}"></app-corpo-destaque>
-        <div [ngClass]="{'ativoEsq': currentSection === 1 && currentSection < lastSection, 'ativoDir': currentSection === 1 && currentSection > lastSection, 'desativoEsq': (currentSection !== 1) && currentSection > lastSection, 'desativoDir': (currentSection !== 1) && currentSection < lastSection}">
+        <div id="perfil" [ngClass]="{'ativoEsq': currentSection === 1 && currentSection < lastSection, 'ativoDir': currentSection === 1 && currentSection > lastSection, 'desativoEsq': (currentSection !== 1) && currentSection > lastSection, 'desativoDir': (currentSection !== 1) && currentSection < lastSection}">
             <app-perfil [class.hide]="lastSection === -1"></app-perfil>
+            <span id="line"></span>
             <app-skills [class.hide]="lastSection === -1"></app-skills>
         </div>
         <div [ngClass]="{'ativoDir': currentSection === 2, 'desativoDir': currentSection !== 2}">
