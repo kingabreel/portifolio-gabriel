@@ -9,8 +9,11 @@ import { delay } from 'rxjs';
 export class HomeComponent {
 
   currentSection = 0;
-  lastSection = 0;
+  lastSection = -1;
 
+  ngOnInit(){
+    document.body.style.overflowX = 'hidden';
+  }
   selectSection(index: number) {
     this.lastSection = this.currentSection;
     this.currentSection = index;

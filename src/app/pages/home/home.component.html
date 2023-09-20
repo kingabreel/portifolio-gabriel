@@ -8,12 +8,15 @@
     </div>
     
     <div class="content">
-        <app-corpo-destaque *ngIf="currentSection === 0" [class.animarEsquerda]="currentSection===0 && lastSection > currentSection"></app-corpo-destaque>
-        <div *ngIf="currentSection === 1" [class.animarEsquerda]="currentSection===1 && lastSection > currentSection">
-            <app-perfil></app-perfil>
-            <app-skills></app-skills>
+        <span></span>
+        <app-corpo-destaque [ngClass]="{'first': currentSection === 0 && lastSection === -1, 'ativoEsq': currentSection === 0, 'desativoEsq': currentSection !== 0}"></app-corpo-destaque>
+        <div [ngClass]="{'ativoEsq': currentSection === 1 && currentSection < lastSection, 'ativoDir': currentSection === 1 && currentSection > lastSection, 'desativoEsq': (currentSection !== 1) && currentSection > lastSection, 'desativoDir': (currentSection !== 1) && currentSection < lastSection}">
+            <app-perfil [class.hide]="lastSection === -1"></app-perfil>
+            <app-skills [class.hide]="lastSection === -1"></app-skills>
         </div>
-        <app-main *ngIf="currentSection === 2" [class.animarDireita]="currentSection === 2 && lastSection < currentSection"></app-main>
+        <div [ngClass]="{'ativoDir': currentSection === 2, 'desativoDir': currentSection !== 2}">
+            <app-main [class.hide]="lastSection === -1"></app-main>
+        </div>
         <app-rodape></app-rodape>
     </div>
 </div>
