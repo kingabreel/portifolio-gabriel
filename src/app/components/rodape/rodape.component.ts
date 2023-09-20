@@ -12,13 +12,13 @@ export class RodapeComponent {
   constructor(private renderer: Renderer2){}
 
   onMouseOverEsq() {
-    this.renderer.setAttribute(this.spriteImage.nativeElement, 'src', 'assets/dedoEsq.png');
+    this.renderer.setAttribute(this.spriteImage.nativeElement, 'src', 'assets/sprites/dedoEsq.png');
   }
   onMouseOverDir() {
-    this.renderer.setAttribute(this.spriteImage.nativeElement, 'src', 'assets/dedoDir.png');
+    this.renderer.setAttribute(this.spriteImage.nativeElement, 'src', 'assets/sprites/dedoDir.png');
   }
   onMouseOut() {
-    this.renderer.setAttribute(this.spriteImage.nativeElement, 'src', 'assets/paradoC.gif');
+    this.renderer.setAttribute(this.spriteImage.nativeElement, 'src', 'assets/sprites/gifs/paradoC.gif');
   }
   onClickFunc(){
     this.feedbackGive = true

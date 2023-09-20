@@ -1,11 +1,11 @@
 <div class="rodape-container">
     <div class="feedback">
         <div *ngIf="!feedbackGive" class="feedback-joia">
-            <img src="assets/polegarBa.png" width="30px" height="30px" alt="nao-gostou" class="joia-baixo" (mouseenter)="onMouseOverEsq()" (mouseleave)="onMouseOut()" (click)="onClickFunc()">
+            <img src="assets/sprites/polegarBa.png" width="30px" height="30px" alt="nao-gostou" class="joia-baixo" (mouseenter)="onMouseOverEsq()" (mouseleave)="onMouseOut()" (click)="onClickFunc()">
             
-            <img src="assets/paradoC.gif" height="30" alt="sprite" class="sprite" #spriteImage>
+            <img src="assets/sprites/gifs/paradoC.gif" height="30" alt="sprite" class="sprite" #spriteImage>
 
-            <img src="assets/polegarCi.png" width="24px" height="24px" alt="gostou" class="joia-cima" (mouseenter)="onMouseOverDir()" (mouseleave)="onMouseOut()" (click)="onClickFunc()">
+            <img src="assets/sprites/polegarCi.png" width="24px" height="24px" alt="gostou" class="joia-cima" (mouseenter)="onMouseOverDir()" (mouseleave)="onMouseOut()" (click)="onClickFunc()">
         </div>
         <h1 *ngIf="feedbackGive" class="rodape-titulo">Agradeço pelo feedback</h1>
         <p class="rodape-paragrafo">Pagina construida com <span>Numero</span> de bugs</p>
