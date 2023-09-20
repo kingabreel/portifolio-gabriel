@@ -1,7 +1,19 @@
-<div class="content">
-    <app-corpo-destaque></app-corpo-destaque>
-    <app-perfil></app-perfil>
-    <app-skills></app-skills>
-    <app-main></app-main>
-    <app-rodape></app-rodape>
+<div class="home-page-container">
+    <div class="dots">
+        <div class="carousel-dots">
+            <div class="dot" [class.active]="currentSection === 0" (click)="selectSection(0)"></div>
+            <div class="dot" [class.active]="currentSection === 1" (click)="selectSection(1)"></div>
+            <div class="dot" [class.active]="currentSection === 2" (click)="selectSection(2)"></div>
+      </div>
+    </div>
+    
+    <div class="content">
+        <app-corpo-destaque *ngIf="currentSection === 0" [class.animarEsquerda]="currentSection===0 && lastSection > currentSection"></app-corpo-destaque>
+        <div *ngIf="currentSection === 1" [class.animarEsquerda]="currentSection===1 && lastSection > currentSection">
+            <app-perfil></app-perfil>
+            <app-skills></app-skills>
+        </div>
+        <app-main *ngIf="currentSection === 2" [class.animarDireita]="currentSection === 2 && lastSection < currentSection"></app-main>
+        <app-rodape></app-rodape>
+    </div>
 </div>
