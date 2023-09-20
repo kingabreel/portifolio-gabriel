@@ -3,7 +3,7 @@
     justify-content: center;
 }
 .content span{
-    height: 1150px;
+    height: 750px;
 }
 app-rodape{
     display: flex;
@@ -11,7 +11,6 @@ app-rodape{
     width: 100%;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #ccc;
 }
 
 app-corpo-destaque{
@@ -32,13 +31,14 @@ app-corpo-destaque{
   }
   
 .dot {
-    width: 50px;
-    height: 5px;
+    width: 70px;
+    height: 9px;
     background-color: #ccc;
-    border-radius: 20%;
+    border-radius: 40%;
     margin: 5px;
     display: inline-block;
     cursor: pointer;
+    animation: aparicao 2s forwards;
 }
   
 .dot.active {

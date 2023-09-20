@@ -1,6 +1,6 @@
 .main-artigo-container {
     width: 1240px;
-    height: 680px;
+    height: 630px;
     flex-shrink: 0;
     
     display: flex;
@@ -25,8 +25,8 @@
     gap: 80px;
 }
 .imagem-artigo {
-    width: 600px;
-    height: 500px;
+    width: 568px;
+    height: 468px;
     flex-shrink: 0;
 }
 
