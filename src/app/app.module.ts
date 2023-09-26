@@ -18,6 +18,7 @@ import { ProjetosCardComponent } from './components/projetos-card/projetos-card.
 import { ContatoComponent } from './pages/contato/contato.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { CorpoDestaqueComponent } from './components/corpo-destaque/corpo-destaque.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -36,11 +37,12 @@ import { CorpoDestaqueComponent } from './components/corpo-destaque/corpo-destaq
     ProjetosCardComponent,
     ContatoComponent,
     ProjetosComponent,
-    CorpoDestaqueComponent,
+    CorpoDestaqueComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

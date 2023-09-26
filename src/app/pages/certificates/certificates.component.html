@@ -1,5 +1,9 @@
 <div class="certificados-main">
     <div class="certificado-componente">
-        <app-certificados-card></app-certificados-card>
+        <ul *ngFor="let certificate of certificates">
+            <li *ngFor="let c of certificate.certificados">
+                <app-certificados-card nome="{{c.name}}" cargaHora="{{c.horas}}" data="{{c.data}}" linkCert="{{c.link}}" img="{{c.img}}"></app-certificados-card>
+            </li>
+        </ul>
     </div>
 </div>

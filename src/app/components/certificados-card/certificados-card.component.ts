@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-certificados-card',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./certificados-card.component.css']
 })
 export class CertificadosCardComponent {
+  @Input()
+  nome:string=""
+  @Input()
+  cargaHora:string=""
+  @Input()
+  data:string=""
+  @Input()
+  linkCert:string=""
+  @Input()
+  img:string=""
 
+  paragraph:string= this.data + " " + this.cargaHora + this.linkCert;
 }

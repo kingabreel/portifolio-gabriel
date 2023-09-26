@@ -1,8 +1,13 @@
 <div class="certificado-container">
     <div class="certificado-img">
-        <img src="assets/img.png" alt="img" class="img-certificados">
+        <img src="{{img}}" alt="img" class="img-certificados">
     </div>
-
-    <app-titulo-paragrafo></app-titulo-paragrafo>
-
+    <div class="descricao-container">
+        <h1 class="titulo">{{nome}}</h1>
+        <div class="paragrafo-container">
+            <p class="pararafo">Conclusão: {{data}}</p>
+            <p class="pararafo">Carga horária: {{cargaHora}} horas</p>
+            <p class="pararafo">Link: <a href="{{linkCert}}">Site externo</a></p>
+        </div>
+    </div>
 </div>
