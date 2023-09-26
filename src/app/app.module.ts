@@ -36,7 +36,7 @@ import { CorpoDestaqueComponent } from './components/corpo-destaque/corpo-destaq
     ProjetosCardComponent,
     ContatoComponent,
     ProjetosComponent,
-    CorpoDestaqueComponent
+    CorpoDestaqueComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,8 @@
 }
 
 .main-artigo-category {
+    position: absolute;
+    top: 0;
     color: #FFF;
     text-align: justify;
     font-family: Roboto;
@@ -27,7 +29,105 @@
 .imagem-artigo {
     width: 568px;
     height: 468px;
-    flex-shrink: 0;
+    border-radius: 5%;
+}
+
+.dots {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+  }
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-flex;
+    cursor: pointer;
+    animation: aparicao 2s forwards;
+}
+  
+.dot.active {
+    background-color: #007bff; 
+    box-shadow: 0 0 10px #66a5e9;
 }
 
 
+.ativoEsq {
+    position: absolute;
+    animation: entradaSuaveEsq 2s forwards;
+}
+.desativoEsq {
+    position: absolute;
+    animation: SaidaSuaveEsq 1s forwards;
+}
+
+.ativoDir {
+    position: absolute;
+    animation: entradaSuaveDir 2s forwards;
+}
+.desativoDir {
+    position: absolute;
+    animation: saidaSuaveDir 1s forwards;
+}
+.hide {
+    display: none;
+}
+.first {
+    animation: aparicao 2s forwards;
+}
+@keyframes SaidaSuaveEsq {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+@keyframes entradaSuaveEsq {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes saidaSuaveDir {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+@keyframes entradaSuaveDir {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparicao {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}

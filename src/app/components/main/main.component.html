@@ -1,17 +1,25 @@
 <div class="main-artigo-container">
     <h1 class="main-artigo-category">{{categoria}}</h1>
-
-    <div class="main-container-information">
+    <div class="main-container-information" [ngClass]="{'first': currentSection === 0 && lastSection === -1, 'ativoEsq': currentSection === 0, 'desativoEsq': currentSection !== 0}">
         <img src="assets/img.png" alt="imagem-artigo" class="imagem-artigo">
 
-        <app-titulo-paragrafo></app-titulo-paragrafo>
+        <app-titulo-paragrafo title="pa 1"></app-titulo-paragrafo>
     </div>
-    
-    <div class="pontinhos">
-        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28 34C31.3137 34 34 31.3137 34 28C34 24.6863 31.3137 22 28 22C24.6863 22 22 24.6863 22 28C22 31.3137 24.6863 34 28 34Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M49 33C51.7614 33 54 30.7614 54 28C54 25.2386 51.7614 23 49 23C46.2386 23 44 25.2386 44 28C44 30.7614 46.2386 33 49 33Z" stroke="#C0C0C0" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7 33C9.76142 33 12 30.7614 12 28C12 25.2386 9.76142 23 7 23C4.23858 23 2 25.2386 2 28C2 30.7614 4.23858 33 7 33Z" stroke="#C0C0C0" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+    <div class="main-container-information" [ngClass]="{'ativoEsq': currentSection === 1 && currentSection < lastSection, 'ativoDir': currentSection === 1 && currentSection > lastSection, 'desativoEsq': (currentSection !== 1) && currentSection > lastSection, 'desativoDir': (currentSection !== 1) && currentSection < lastSection}">
+        <img src="assets/img.png" alt="imagem-artigo" class="imagem-artigo">
+
+        <app-titulo-paragrafo title="pa 2"></app-titulo-paragrafo>
+    </div>
+    <div class="main-container-information" [ngClass]="{'ativoDir': currentSection === 2, 'desativoDir': currentSection !== 2}">
+        <img src="assets/img.png" alt="imagem-artigo" class="imagem-artigo">
+
+        <app-titulo-paragrafo title="pa 3"></app-titulo-paragrafo>
+    </div>
+    <div class="dots">
+        <div class="carousel-dots">
+            <div class="dot" [class.active]="currentSection === 0" (click)="selectSection(0)"></div>
+            <div class="dot" [class.active]="currentSection === 1" (click)="selectSection(1)"></div>
+            <div class="dot" [class.active]="currentSection === 2" (click)="selectSection(2)"></div>
+        </div>
     </div>
 </div>
