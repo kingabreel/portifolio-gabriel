@@ -10,6 +10,16 @@
     margin: auto;
     gap: 30px;
 }
+.main-container-information > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    left: 48.5%;
+}
 
 .main-artigo-category {
     position: absolute;

@@ -1,19 +1,24 @@
 <div class="main-artigo-container">
     <h1 class="main-artigo-category">{{categoria}}</h1>
     <div class="main-container-information" [ngClass]="{'first': currentSection === 0 && lastSection === -1, 'ativoEsq': currentSection === 0, 'desativoEsq': currentSection !== 0}">
-        <img src="assets/img.png" alt="imagem-artigo" class="imagem-artigo">
+        <img src="assets/ada.jpeg" alt="Ada Lovelace by Alfred Edward Chalon" class="imagem-artigo">
 
-        <app-titulo-paragrafo title="pa 1"></app-titulo-paragrafo>
+        <p style="font-size: 10px; color: #ccc; margin-left: -50px;">Creator: Alfred Edward Chalon </p>
+
+        <app-titulo-paragrafo title="Quem foi o pioneiro da programação?" paragraph="O pioneirismo foi sublinhado por Alan Turing, conhecido como o “pai da computação moderna”, que fez referência ao trabalho de Lovelace em suas pesquisas. A linguagem de programação Ada foi criada em homenagem a ela pelo Departamento de Defesa dos Estados Unidos e formalizada em 1980"></app-titulo-paragrafo>
+        <a href='https://www.estudarfora.org.br/ada-lovelace/'>fonte</a>
     </div>
     <div class="main-container-information" [ngClass]="{'ativoEsq': currentSection === 1 && currentSection < lastSection, 'ativoDir': currentSection === 1 && currentSection > lastSection, 'desativoEsq': (currentSection !== 1) && currentSection > lastSection, 'desativoDir': (currentSection !== 1) && currentSection < lastSection}">
-        <img src="assets/img.png" alt="imagem-artigo" class="imagem-artigo">
+        <img src="assets/ipAdress.png" alt="Endereço ip 255" class="imagem-artigo" style="background-color: #fff;">
 
-        <app-titulo-paragrafo title="pa 2"></app-titulo-paragrafo>
+        <app-titulo-paragrafo title="Dia do Programador" paragraph="13 de setembro, dia do programador. Esse dia foi escolhido por ser o dia número 256 do ano, 256 é um número bastante conhecido no mundo da tecnologia, pois ele equivale a um byte, ou 8 bits."></app-titulo-paragrafo>
+        <a href="https://pt.wikipedia.org/wiki/Dia_do_Programador">fonte</a>
     </div>
     <div class="main-container-information" [ngClass]="{'ativoDir': currentSection === 2, 'desativoDir': currentSection !== 2}">
-        <img src="assets/img.png" alt="imagem-artigo" class="imagem-artigo">
+        <img src="assets/programador.jpeg" alt="meme programador" class="imagem-artigo">
 
-        <app-titulo-paragrafo title="pa 3"></app-titulo-paragrafo>
+        <app-titulo-paragrafo title="A maioria dos Desenvolvedores são autodidatas" paragraph="Uma pesquisa da Stack Overflow em 2018 mostrou que mais de 80% dos programadores aprendem novas tecnologias de maneira informal, seja em cursos ou documentações. Muitas empresas não requerem um certificado para contratar alguém, isso se deve por conta do apagão da TI."></app-titulo-paragrafo>
+        <a href="https://insights.stackoverflow.com/survey/2018#developer-profile">fonte</a>
     </div>
     <div class="dots">
         <div class="carousel-dots">

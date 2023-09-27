@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CorpoDestaqueComponent implements OnInit {
   saudacao = 'Olá! Hello! Hola!';
   titulo = 'Engenheiro de Software';
-  paragrafo = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi expedita sapiente, vero id porro accusamus in, ab provident obcaecati molestiae inventore qui officiis, incidunt sequi nobis officia corrupti fuga voluptatem?';
+  paragrafo = 'Me chamo Gabriel, sou dev de software, desenhista e atleta nas horas vagas. Uma grande qualidade/defeito que tenho é que quando foco em algo, esqueço de tudo ao meu redor, esse projeto me fez esquecer de almoçar hoje.';
 
   textoExibido = {
     saudacao: '',
