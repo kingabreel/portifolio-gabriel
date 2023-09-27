@@ -18,7 +18,8 @@ import { ProjetosCardComponent } from './components/projetos-card/projetos-card.
 import { ContatoComponent } from './pages/contato/contato.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { CorpoDestaqueComponent } from './components/corpo-destaque/corpo-destaque.component';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { AndamentoComponent } from './pages/andamento/andamento.component'; 
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProjetosCardComponent,
     ContatoComponent,
     ProjetosComponent,
-    CorpoDestaqueComponent
+    CorpoDestaqueComponent,
+    AndamentoComponent
   ],
   imports: [
     BrowserModule,
