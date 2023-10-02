@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CertificadosService {
-  private apiUrl = 'http://localhost:3000/certificados'; 
+  private apiUrl = 'https://conexao-bancodadosnode-production.up.railway.app/certificados'; 
 
   constructor(private http: HttpClient) {}
 
