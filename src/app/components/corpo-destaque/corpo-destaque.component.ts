@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-corpo-destaque',
   templateUrl: './corpo-destaque.component.html',
-  styleUrls: ['./corpo-destaque.component.css']
+  styleUrls: ['./corpo-destaque.component.css', 'corpo-destaque-responsive.component.css']
 })
 export class CorpoDestaqueComponent implements OnInit {
   saudacao = 'Olá! Hello! Hola!';
