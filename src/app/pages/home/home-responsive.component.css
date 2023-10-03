@@ -1,4 +1,4 @@
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 200px) and (max-width: 539px){
     .dot{
         width: 13px;
         height: 13px;
@@ -16,16 +16,38 @@
         padding-bottom: 190px;
     }
 }
-@media only screen and (min-width: 361px) {
-    .dot{
-        width: 13px;
-        height: 13px;
-        margin: 0 26px 0 26px;
-    }
+@media only screen and (min-width: 540px) and (max-width: 860px){
     .content {
         width: 100%;
     }
     app-corpo-destaque {
         width: 100%;
+    }
+    #perfil {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 190px;
+    }
+}
+
+@media only screen and (min-width: 861px) and (max-width: 1023px){
+    #perfil {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 190px;
+    }
+    #line {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1720px){
+    #perfil {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 190px;
+    }
+    #line {
+        display: none;
     }
 }

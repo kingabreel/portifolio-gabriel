@@ -1,4 +1,4 @@
-@media only screen and (max-width: 360px){
+@media only screen and (min-width: 200px) and (max-width: 539px){
     .skills-container {
         width: 100%;
     }
@@ -8,6 +8,20 @@
         gap: 30px;
     }
     .skills-titulo {
-        font-size: 24px;
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 860px){
+    .skills-container {
+        width: 100%;
+    }
+    .skills-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .skills-titulo {
+        font-size: 32px;
     }
 }
