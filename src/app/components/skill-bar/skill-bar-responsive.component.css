@@ -1,0 +1,7 @@
+@media only screen and (max-width: 360px){
+    .skills-svg {
+        border-radius: 10px;
+        width: 240px;
+        height: 30px;
+    }
+}

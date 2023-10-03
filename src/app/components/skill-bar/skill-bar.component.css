@@ -16,6 +16,8 @@
 
 .skills-svg {
     border-radius: 10px;
+    width: 250px;
+    height: 35px;
 }
 .ativar {
     animation: entradaSuaveEsq 3s forwards, movimento 2s infinite;

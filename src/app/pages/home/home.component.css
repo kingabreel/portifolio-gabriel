@@ -69,6 +69,13 @@ app-corpo-destaque{
 .first {
     animation: aparicao 2s forwards;
 }
+
+app-rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(27, 27, 27, 0.9);
+}
 @keyframes SaidaSuaveEsq {
     from {
         opacity: 1;
