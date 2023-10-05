@@ -78,6 +78,7 @@ app-rodape {
 }
 .content {
     user-select: none;
+    touch-action: manipulation;
 }
 @keyframes SaidaSuaveEsq {
     from {
