@@ -76,6 +76,9 @@ app-rodape {
     left: 0;
     background-color: rgba(27, 27, 27, 0.9);
 }
+.content {
+    user-select: none;
+}
 @keyframes SaidaSuaveEsq {
     from {
         opacity: 1;
