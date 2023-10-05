@@ -1,0 +1,54 @@
+@media only screen and (min-width: 200px) and (max-width: 399px){
+    .contato-container{
+        width: 280px;
+    }
+    form{
+        width: 280px;
+        display: flex;
+    }
+    .formulario-container > .img-formulario img{
+        display: none;
+    }
+    .paragrafo-social-rodape {
+        font-size: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px){
+    .contato-container{
+        width: 380px;
+    }
+    form{
+        width: 380px;
+        display: flex;
+    }
+    .formulario-container > .img-formulario img{
+        display: none;
+    }
+    .paragrafo-social-rodape {
+        font-size: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .contato-container{
+        width: 590px;
+    }
+    form{
+        width: 590px;
+        display: flex;
+    }
+    .formulario-container > .img-formulario img{
+        display: none;
+    }
+    .paragrafo-social-rodape {
+        font-size: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1090px){
+
+}
