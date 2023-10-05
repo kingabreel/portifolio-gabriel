@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-certificados-card',
   templateUrl: './certificados-card.component.html',
-  styleUrls: ['./certificados-card.component.css']
+  styleUrls: ['./certificados-card.component.css', 'certificados-card-responsive.component.css']
 })
 export class CertificadosCardComponent {
   @Input()
