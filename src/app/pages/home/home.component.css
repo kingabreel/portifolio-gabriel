@@ -40,7 +40,7 @@ app-corpo-destaque{
     cursor: pointer;
     animation: aparicao 2s forwards;
 }
-  
+@media only screen and (min-width: 1024px){
 .dot.active {
     background-color: #007bff; 
     box-shadow: 0 0 10px #66a5e9;
@@ -131,4 +131,5 @@ app-rodape {
         opacity: 1;
         transform: translateX(1px);
     }
+}
 }

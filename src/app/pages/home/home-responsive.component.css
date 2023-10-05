@@ -6,6 +6,8 @@
     }
     .content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     app-corpo-destaque {
         width: 100%;
@@ -14,6 +16,10 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 190px;
+    }
+    
+    .carousel-dots, .content > span {
+        display: none;
     }
 }
 @media only screen and (min-width: 540px) and (max-width: 860px){
@@ -36,7 +42,7 @@
         flex-direction: column;
         padding-bottom: 190px;
     }
-    #line {
+    #line, #lastdot {
         display: none;
     }
 }
@@ -47,7 +53,7 @@
         flex-direction: column;
         padding-bottom: 190px;
     }
-    #line {
+    #line, #lastdot {
         display: none;
     }
 }
