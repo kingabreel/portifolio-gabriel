@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-projetos-card',
   templateUrl: './projetos-card.component.html',
-  styleUrls: ['./projetos-card.component.css']
+  styleUrls: ['./projetos-card.component.css', 'projeto-card-responsivo.component.css']
 })
 export class ProjetosCardComponent {
   @Input()
