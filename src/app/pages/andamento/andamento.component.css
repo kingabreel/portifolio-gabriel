@@ -13,6 +13,7 @@ h1{
     margin: auto;
     border-radius: 5px;
     width: 1240px;
+    gap: 100px;
 }
 .projetos-em-andamento_container > .projetos-em-andamento {
     display: flex;
