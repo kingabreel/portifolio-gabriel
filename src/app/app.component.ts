@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portifolio';
+
+  redirect(){
+    let url = 'https://ggoncalves.vercel.app/'
+
+    window.location.href = url;
+  }
 }
