@@ -3,7 +3,6 @@
         <div class="carousel-dots">
             <div class="dot" [class.active]="currentSection === 0" (click)="selectSection(0)"></div>
             <div class="dot" [class.active]="currentSection === 1" (click)="selectSection(1)"></div>
-            <div class="dot" [class.active]="currentSection === 2" (click)="selectSection(2)"></div>
       </div>
     </div>
     
@@ -15,9 +14,5 @@
             <span id="line"></span>
             <app-skills [class.hide]="lastSection === -1"></app-skills>
         </div>
-        <div [ngClass]="{'ativoDir': currentSection === 2, 'desativoDir': currentSection !== 2}">
-            <app-main [class.hide]="lastSection === -1"></app-main>
-        </div>
-        <app-rodape></app-rodape>
     </div>
 </div>
