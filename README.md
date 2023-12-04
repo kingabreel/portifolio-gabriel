@@ -1,13 +1,9 @@
 # Portifolio
-# Responsivo valores
-    Móvel: 360 x 640.
-    Móvel: 375 x 667.
-    Móvel: 360 x 720.
-    iPhone X: 375 x 812.
-    Pixel 2: 411 x 731.
-    Tabuleiro: 768 x 1024.
-    Portátil: 1366 x 768.
-    Laptop ou desktop de alta resolução: 1920 x 1080
+Imagens do projeto
+![home](src/assets/readme-images/home.png)
+![contact](src/assets/readme-images/contact.png)
+![profile](src/assets/readme-images/profile.png)
+![certificate](src/assets/readme-images/certificates.png)
     
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
