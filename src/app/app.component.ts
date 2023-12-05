@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'portifolio';
 
   redirect(){
-    let url = 'https://ggoncalves.vercel.app/'
+    let url = 'https://ggoncalves-site.vercel.app/'
 
     window.location.href = url;
   }
