@@ -12,3 +12,11 @@ body {
     color: #ffffff;
     background: linear-gradient(135deg, #000000, #0a0a0a, #0d0d0d); 
 }
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(135deg, #002b24, #001d18);
+}
