@@ -1,14 +1,12 @@
-<div class="header-container">
-    <app-item-list listItem1="" 
-    listItem2="Certificações" 
-    listItem3="Projetos"></app-item-list>
-
-    <div class="header-logo">
-        <img src="assets/sprites/gifs/pixelWalk.gif" alt="logo" class="header-logo-img">
-        <p class="header-logo-name" (click)="returnHome()">Gabriel Gonçalves</p>
+<header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="logo">
     </div>
-    
-    <app-item-list listItem1="Andamento" 
-    listItem2="Contato" 
-    listItem3=""></app-item-list>
-</div>
+
+    <div class="header-buttons">
+        <button id="home-button">Home</button>
+        <button id="about-me-button">Sobre mim</button>
+        <button id="projects-button">Projetos</button>
+        <button id="contact-button">Contato</button>
+    </div>
+</header>

@@ -1,42 +1,38 @@
-.header-container {
+header {
+    width: 100wh;
+    height: 10vh;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content:center;
-    gap: 50px;
-    height: 128px;
-    width: 100%;
+    background: linear-gradient(135deg, #002b24, #004d40);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header-logo-name {
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-
-    background: linear-gradient(180deg, #FFF 64%, rgba(30, 30, 30, 0.66) 136%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.header-logo {
+header > .logo {
+    width: 50px;
+    height: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-.header-logo:hover {
-    transform: scale(1.005);
-}
-.header-logo > p {
-    cursor: pointer;
-    padding: 5px;
 }
 
-.header-logo-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px 3px 50px 3px
+.logo > img {
+    height: 100%;
+}
+
+.header-buttons > button {
+    border-radius: 3px;
+    margin: 5px 20px;
+    text-align: center;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+.header-buttons button:hover {
+    background: #004d40;
+    color: #ffffff;
 }
