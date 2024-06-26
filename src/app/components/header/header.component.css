@@ -36,3 +36,7 @@ header > .logo {
     background: #004d40;
     color: #ffffff;
 }
+
+div.menu {
+    display: none;
+}

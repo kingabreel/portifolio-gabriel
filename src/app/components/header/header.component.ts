@@ -28,5 +28,27 @@ export class HeaderComponent {
     document.getElementById('contact-button')?.addEventListener('click', () => {
       this.router.navigate(['/contato']); 
     });
+
+    document.getElementsByClassName('menu')[0]?.addEventListener('click', () => {
+      const buttonsDiv = document.getElementsByClassName('header-buttons')[0];
+      const logo = document.getElementsByClassName('logo')[0];
+      const menu = document.getElementsByClassName('menu')[0];
+      const header = document.getElementsByClassName('header')[0];
+    
+      if (buttonsDiv) {
+        buttonsDiv.classList.toggle('active');
+      }
+      if (logo) {
+        logo.classList.toggle('active');
+      }
+      if (menu) {
+        menu.classList.toggle('active');
+      }
+      if (header) {
+        header.classList.toggle('active');
+      }
+    });
+
+
   }
 }
