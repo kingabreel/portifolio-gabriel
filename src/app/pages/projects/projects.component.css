@@ -1,0 +1,55 @@
+main#projects-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main#projects-main > .project-section {
+    display: flex;
+    justify-content: center;
+    width: 80wh;
+    flex-direction: column;
+}
+
+#projects-main > .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text > h1 {
+    margin-top: 30px;
+    font-size: 3rem;
+}
+
+.text > p {
+    font-size: 1.3em;
+}
+.line-projects {
+    display: flex;
+    margin: 50px;
+}
+.line-projects > .project-section-card {
+    background-color: #003d34;
+    width: 20vw;
+    height: 33vh;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+
+.project-section-card img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.project-section-card > h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.project-section-card > p {
+    text-align: justify;
+    font-size: 1rem;
+}

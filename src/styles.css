@@ -1,21 +1,22 @@
 * {
-    padding: 0;
     margin: 0;
-    border: 0;
+    padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
-   background: linear-gradient(to bottom, #000000, #060606, #0c0c0c, #121212, #101010, #080808, #000000, #080808, #101010);
-    background-size: 200% 200%;
-    animation: backgroundColor 50s linear infinite;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: linear-gradient(135deg, #000000, #0a0a0a, #0d0d0d); 
 }
-
-@keyframes backgroundColor {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(135deg, #002b24, #001d18);
 }
