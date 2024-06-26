@@ -15,18 +15,26 @@ export class HeaderComponent {
   ngAfterViewInit() {
     document.getElementById('home-button')?.addEventListener('click', () => {
       this.router.navigate(['/']); 
+
+      this.closeMenu();
     });
 
     document.getElementById('about-me-button')?.addEventListener('click', () => {
       this.router.navigate(['/sobre']); 
+
+      this.closeMenu();
     });
 
     document.getElementById('projects-button')?.addEventListener('click', () => {
       this.router.navigate(['/projetos']); 
+
+      this.closeMenu();
     });
 
     document.getElementById('contact-button')?.addEventListener('click', () => {
       this.router.navigate(['/contato']); 
+
+      this.closeMenu();
     });
 
     document.getElementsByClassName('menu')[0]?.addEventListener('click', () => {
@@ -34,7 +42,7 @@ export class HeaderComponent {
       const logo = document.getElementsByClassName('logo')[0];
       const menu = document.getElementsByClassName('menu')[0];
       const header = document.getElementsByClassName('header')[0];
-    
+
       if (buttonsDiv) {
         buttonsDiv.classList.toggle('active');
       }
@@ -48,7 +56,19 @@ export class HeaderComponent {
         header.classList.toggle('active');
       }
     });
+  }
 
+  closeMenu() {
+    const buttonsDiv = document.getElementsByClassName('header-buttons')[0];
+    const logo = document.getElementsByClassName('logo')[0];
+    const menu = document.getElementsByClassName('menu')[0];
+    const header = document.getElementsByClassName('header')[0];
 
+    if(header.className.endsWith('active')) {
+      header.classList.remove('active');
+      logo.classList.remove('active');
+      menu.classList.remove('active');
+      buttonsDiv.classList.remove('active');
+    }
   }
 }
