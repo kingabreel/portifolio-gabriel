@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | System Override</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <canvas id="matrix-canvas"></canvas>
+
+    <nav>
+        <div style="font-weight: bold; font-size: 1.2rem;">
+            <span style="color: var(--text-main);">LOGGED_IN:</span>
+            <span style="color: var(--primary-accent);">GUEST</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero">/ABOUT</a>
+            <a href="#skills">/SKILLS</a>
+            <a href="#projects">/PROJECTS</a>
+            <a href="#knowledge">/KNOWLEDGE_BASE</a>
+        </div>
+        <div class="nav-links">
+            <a href="https://linkedin.com/in/kingabreel" target="_blank">/ext/linkedin</a>
+            <a href="https://github.com/kingabreel" target="_blank">/ext/github</a>
+            <a href="https://www.chess.com/member/kingabreel" target="_blank">/ext/chess?</a>
+        </div>
+        <div class="theme-switch-wrapper">
+            <span id="mode-label">4n0NYm_MODE</span>
+            <label class="theme-switch" for="theme-toggle">
+                <input type="checkbox" id="theme-toggle" />
+                <div class="slider"></div>
+            </label>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-image">
+            <div class="image-container">
+                <img src="profile.png" alt="Profile Picture" class="profile-pic">
+                <div class="scanline"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="terminal-text" id="typewriter"></div>
+            <h1 class="glitch-text" data-text="Ultra Secret Page">Ultra <span>secret</span> page</h1>
+            <p>Experienced fullstack developer. 2 years of professional experience + 3 years of academic experience.
+                With
+                knowledge in different tech fields as cybersec, game development, frontend/backend, mobile and
+                architecture.
+            </p>
+        </div>
+
+
+    </header>
+
+    <section id="skills" class="container" style="background: rgba(0,0,0,0.2);">
+        <h2 class="section-title">/bin/capabilities</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>[01] Fullstack Dev</h3>
+                <p>Building responsive frontends and robust, secure backends capable of serving global users.</p>
+            </div>
+            <div class="card">
+                <h3>[02] 3D/2D Game Dev</h3>
+                <p>Creating immersive experiences using Unity and rendering 3D models through Blender.</p>
+            </div>
+            <div class="card">
+                <h3>[03] Mobile Dev</h3>
+                <p>Developing cross-platform mobile applications using Flutter + Dart.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">/var/www/projects</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="Taekwon-do - Digital Dojang">Taekwon-do - Digital Dojang</h4>
+                <p>A mobile application currently live on the Play Store, designed to track progress, technique, and
+                    routines. The app has day progress, list of exercises with difficulty levels and filtering, fighting
+                    timer, 3D model visualization, custom workout and more.</p>
+                <div class="tag-container">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Blender</span>
+                    <span class="tag">Mobile</span>
+                    <span class="tag">Play Store</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="PrecifiCar">PrecifiCar</h4>
+                <p>Final Project - T-Academy. Project to help people find the best car for their needs. Main role was to
+                    develop the frontend using Angular and the microservices integration at the backend side for
+                    scrapping purposes.</p>
+                <div class="tag-container">
+                    <span class="tag">Angular</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">Web Scrapping</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="MyAudios">MyAudios</h4>
+                <p>Solo academic project, the goal was to create a web application + microservices. One API gateway to
+                    store audios in a CDN (Minio), then send a notification to a queue (RabbitMQ) to process (compress +
+                    get audio metadata) and convert the audio files.</p>
+                <div class="tag-container">
+                    <span class="tag">C#</span>
+                    <span class="tag">Dotnet</span>
+                    <span class="tag">Angular</span>
+                    <span class="tag">SignalR</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">RabbitMQ</span>
+                    <span class="tag">Minio</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="Gl4dos">Gl4dos</h4>
+                <p>Academic project, a web site "GPT like" it had an AI running in backend made in python, there were a
+                    LLM for text, a model for image generation, one model for image enhancement and a function for
+                    object detection + labeling + count total.</p>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Computacional Vision</span>
+                    <span class="tag">FlaskAPI</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="Battle Tanks">Battle Tanks</h4>
+                <p>Academic project, the goal was to recreate the classic Battle Tanks game using modern web
+                    technologies, in addition, it was necessary to add a multiplayer mode + in game chat.</p>
+                <div class="tag-container">
+                    <span class="tag">C#</span>
+                    <span class="tag">Dotnet</span>
+                    <span class="tag">Angular</span>
+                    <span class="tag">SignalR</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="UNO - Card Game">UNO - Card Game</h4>
+                <p>Solo academic project, the goal was to create a digital version of the classic UNO card game,
+                    implementing all the game rules + multiplayer mode.</p>
+                <div class="tag-container">
+                    <span class="tag">Angular</span>
+                    <span class="tag">Javascript</span>
+                    <span class="tag">Websocket</span>
+                    <span class="tag">Postgres</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="Space Invaders">Space Invaders</h4>
+                <p>Solo academic project, the goal was to recreate the classic Space Invaders game using modern web
+                    technologies.</p>
+                <div class="tag-container">
+                    <span class="tag">C#</span>
+                    <span class="tag">Dotnet</span>
+                    <span class="tag">Avalonia</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 class="decrypt-text" data-value="BitBucket - Movies">BitBucket - Movies</h4>
+                <p>Academic project. A website with simulated payment to rent movies/series. Responsible for the
+                    frontend development + some backend configuration.</p>
+                <div class="tag-container">
+                    <span class="tag">React</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">MongoDb</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="knowledge" class="container">
+        <h2 class="section-title">/sys/class/knowledge_base</h2>
+        <div class="skills-wrapper">
+
+            <div class="skill-category">
+                <h3 class="category-title">>> Core_Stack</h3>
+                <div class="skill-item">
+                    <span class="skill-name">Angular (Typescript)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Java (Spring)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Java (JPA/JSF)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Dart (Flutter)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">React (Javascript)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 55%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title">>> _Database</h3>
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">NoSQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Graphs</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 35%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">ACID + Indexing</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">CAP + PACELC</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title">>> Creative_Engine</h3>
+                <div class="skill-item">
+                    <span class="skill-name">Mobile development</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">System Design + architecture</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Management (Jira/Trello/Agile/Scrum)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Unity & C# Scripting</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Blender & 3D Rendering</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title">>> Localization_Files</h3>
+                <div class="skill-tags">
+                    <span class="lang-tag">Portuguese (Native)</span>
+                    <span class="lang-tag">English (Professional)</span>
+                    <span class="lang-tag">German (In Progress)</span>
+                    <span class="lang-tag">Spanish (In Progress)</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
